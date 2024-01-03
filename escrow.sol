@@ -1,9 +1,16 @@
 //SPDX:License-Identifier:MIT
 
-pragma solidity 0.4.17;
+pragma solidity 0.8.23
 
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 contract ESCROW{
-    address 
+    address owner;
+
+    constructor()payable{
+        owner = msg.sender;
+    }
+    modifier {
+        require (owner == msg.sender)
+    }
 }
