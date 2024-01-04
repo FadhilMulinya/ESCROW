@@ -13,4 +13,8 @@ contract ESCROW{
     modifier {
         require (owner == msg.sender)
     }
+    function payhere()public payable{
+        (bool success, ) = msg.sender()
+        require successs;
+    }
 }
