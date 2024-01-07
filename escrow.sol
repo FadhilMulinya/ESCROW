@@ -21,4 +21,12 @@ contract ESCROW{
         (bool success, )= msg.sender(pay)
         require success;
     }
+    function payhere()public payable{
+        (bool success, ) = msg.sender()
+        require successs;
+    }
+    receiver()external{
+        (bool success, )= msg.sender(pay)
+        require success;
+    }
 }
